@@ -1,14 +1,12 @@
 export const prerender = true;
-
-export const load = async ({ fetch, params }) => {
-	const productById = async (id: number) => {
-		const response = await fetch(`http://localhost:4000/api/blog/${id}`);
-		const result = await response.json();
-		const data = result['data'];
-		return data;
+import { blogs } from '../../../lib/data/data';
+export const load = async ({ params }) => {
+	const productById = () => {
+		const response = blogs.find((p) => p.id === parseInt(params.blogId));
+		return response;
 	};
 
 	return {
-		blog: await productById(parseInt(params.blogId))
+		blog: productById()
 	};
 };

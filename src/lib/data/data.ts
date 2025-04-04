@@ -1,4 +1,3 @@
-import adapter from '@sveltejs/adapter-static';
 export const blogs = [
 	{
 		id: 1,
@@ -163,17 +162,3 @@ export const blogs = [
 	{ id: 35, title: 'zzz', category: 'zzz', body: 'zzz', date: null },
 	{ id: 36, title: 'bvcx', category: 'xcvb', body: 'xcvb', date: null }
 ];
-
-const prerenderEntries = (async () => {
-	const blogEntries = blogs.map((e) => `/blog/${e.id}`);
-	return ['/', '/contact', '/blog', ...blogEntries]; // Semua path harus absolut
-})();
-
-export default {
-	kit: {
-		adapter: adapter(),
-		prerender: {
-			entries: await prerenderEntries
-		}
-	}
-};
