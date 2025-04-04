@@ -1,17 +1,15 @@
+import { blogs } from '$lib/data/data.js';
+
 export const prerender = true;
 
-let test: any[] = [];
-
-export const load = async ({ fetch }) => {
+export const load = async ({}) => {
 	const getAllBlog = async () => {
-		const response = await fetch('http://localhost:4000/api/blog');
-		const result = await response.json();
-		test = result['data'];
+		const response = blogs;
+
 		console.log('Dijalankan ulang');
-		return result['data'];
+		return response;
 	};
 	return {
-		blog: test.length === 0 ? getAllBlog() : null,
-		cacheBlog: test
+		blog: await getAllBlog()
 	};
 };
