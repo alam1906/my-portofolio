@@ -1,19 +1,11 @@
 <script lang="ts">
 	let { form } = $props();
 	import { enhance } from '$app/forms';
-	import { goto } from '$app/navigation';
+	import { fade } from 'svelte/transition';
 </script>
 
-<div class="mx-auto w-full max-w-6xl">
-	<form
-		action="?/addBlog"
-		method="POST"
-		use:enhance={({ formElement, formData, action, cancel, submitter }) => {
-			return async ({ result, update }) => {
-				console.log(result);
-			};
-		}}
-	>
+<div class="mx-auto w-full max-w-6xl" in:fade={{ duration: 500 }}>
+	<form action="?/addBlog" method="POST">
 		<div class="mx-auto mt-5 mb-2 flex w-11/12 flex-col justify-items-center">
 			<div>Title</div>
 			<input type="text" name="title" id="title" class="w-full border-2 border-gray-400 p-3" />

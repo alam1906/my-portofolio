@@ -16,7 +16,7 @@
 </script>
 
 <nav
-	class="sticky top-0 mx-auto flex w-full max-w-6xl items-center justify-between bg-white px-3 py-3 md:px-8"
+	class="sticky top-0 z-50 mx-auto flex w-full max-w-6xl items-center justify-between bg-white px-3 py-3 md:px-8"
 	class:shadow-md={isOpen === false}
 >
 	<div class="text-2xl font-semibold underline-offset-8">
@@ -57,7 +57,9 @@
 	<!-- desktop version -->
 	<ul class="hidden items-center justify-center space-x-14 md:flex">
 		{#each links as link}
-			<li class=" item cursor-pointer after:bg-teal-500">
+			<li
+				class=" item cursor-pointer after:bg-teal-500 hover:text-teal-500 hover:underline hover:underline-offset-8"
+			>
 				<a
 					href={link.path}
 					class="block cursor-pointer py-3 font-medium"

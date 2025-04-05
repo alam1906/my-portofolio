@@ -1,13 +1,14 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 </script>
 
-<div class="mx-auto w-full max-w-6xl">
+<div class="mx-auto w-full max-w-6xl" in:fade={{ duration: 500 }}>
 	<!-- Image -->
 	<div class="aspect-video w-full bg-gray-200"></div>
 
 	<!-- Content -->
 	<div>
-		<div class="mt-12 mb-12 w-full text-center text-5xl font-bold tracking-widest text-gray-800">
+		<div class=" mt-12 mb-12 w-full text-center text-5xl font-bold tracking-widest text-gray-800">
 			ABOUT ME
 		</div>
 		<div>
