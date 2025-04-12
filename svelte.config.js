@@ -6,7 +6,8 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			precompress: false,
-			strict: true
+			strict: true,
+			fallback: '404.html'
 		}),
 		prerender: {
 			entries: ['*', '/', '/portofolio', '/certification']
