@@ -8,10 +8,7 @@ const config = {
 			precompress: false,
 			strict: true,
 			fallback: '404.html'
-		}),
-		prerender: {
-			entries: ['*', '/', '/portofolio', '/certification']
-		}
+		})
 	}
 };
 
