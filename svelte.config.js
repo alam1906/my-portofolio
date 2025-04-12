@@ -7,7 +7,10 @@ const config = {
 			assets: 'build',
 			precompress: false,
 			strict: true
-		})
+		}),
+		prerender: {
+			entries: ['*', '/', '/portofolio', '/certification']
+		}
 	}
 };
 
