@@ -6,8 +6,7 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			precompress: false,
-			strict: true,
-			fallback: '404.html'
+			strict: true
 		})
 	}
 };
