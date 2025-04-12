@@ -1,5 +1,6 @@
 <script>
 	import { Github } from '@lucide/svelte';
+	import { fade } from 'svelte/transition';
 	const portofolios = [
 		{
 			id: 1,
@@ -52,7 +53,7 @@
 	];
 </script>
 
-<div class="my-5 w-full">
+<div class="my-5 w-full" in:fade={{ duration: 500 }} out:fade={{ duration: 250 }}>
 	<div class="mt-14 mb-14 text-center text-4xl font-bold">Portofolio</div>
 	<div class="mx-3 grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-3">
 		{#each portofolios as portofolio}

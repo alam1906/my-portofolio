@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Typewriter from 'svelte-typewriter';
+	import { fly } from 'svelte/transition';
 </script>
 
 <div class="h-[calc(100dvh-5rem)] w-full bg-gray-50">
@@ -7,7 +8,11 @@
 		class="flex h-full flex-col items-center justify-center space-y-10 sm:pl-10 md:mx-4 md:flex-row-reverse md:items-center md:justify-center md:space-y-0 md:pl-10"
 	>
 		<!-- profile  -->
-		<div class="flex justify-end md:w-2/3">
+		<div
+			class="flex justify-end md:w-2/3"
+			in:fly={{ x: 300, duration: 500 }}
+			out:fly={{ x: 300, duration: 250 }}
+		>
 			<img
 				class="h-80 w-64 rounded-full md:h-[25rem] md:w-[22rem] lg:h-[30rem] lg:w-[25rem]"
 				src="/profile.avif"
@@ -18,7 +23,11 @@
 		</div>
 
 		<!-- about -->
-		<div class="flex-col px-6 text-center md:w-full md:px-0 md:text-start">
+		<div
+			class="flex-col px-6 text-center md:w-full md:px-0 md:text-start"
+			in:fly={{ x: -300, duration: 500 }}
+			out:fly={{ x: -300, duration: 250 }}
+		>
 			<div class="text-2xl font-semibold text-gray-500 lg:text-3xl">Nur Alam</div>
 
 			<div class="flex justify-center md:justify-start">

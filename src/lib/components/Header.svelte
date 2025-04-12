@@ -11,8 +11,8 @@
 
 	const links = [
 		{ path: '/', title: 'Home' },
-		{ path: '/portofolio', title: 'Portofolio' },
-		{ path: '/certification', title: 'Certification' }
+		{ path: '/portofolio/', title: 'Portofolio' },
+		{ path: '/certification/', title: 'Certification' }
 	];
 </script>
 
