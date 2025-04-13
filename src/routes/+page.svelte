@@ -10,14 +10,13 @@
 		<!-- profile  -->
 		<div
 			class="flex justify-end md:w-2/3"
-			in:fly={{ x: 300, duration: 500 }}
+			in:fly={{ x: 500, duration: 500 }}
 			out:fly={{ x: 300, duration: 250 }}
 		>
 			<img
 				class="h-80 w-64 rounded-full md:h-[25rem] md:w-[22rem] lg:h-[30rem] lg:w-[25rem]"
 				src="/profile.avif"
 				alt=""
-				decoding="async"
 				loading="lazy"
 			/>
 		</div>
@@ -25,7 +24,7 @@
 		<!-- about -->
 		<div
 			class="flex-col px-6 text-center md:w-full md:px-0 md:text-start"
-			in:fly={{ x: -300, duration: 500 }}
+			in:fly={{ x: -500, duration: 500 }}
 			out:fly={{ x: -300, duration: 250 }}
 		>
 			<div class="text-2xl font-semibold text-gray-500 lg:text-3xl">Nur Alam</div>

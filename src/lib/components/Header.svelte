@@ -3,7 +3,7 @@
 	import { slide } from 'svelte/transition';
 	import { page } from '$app/state';
 	let pathName = $derived(page.url.pathname);
-
+	let portofolioId = $derived(page.params.portofolioId);
 	let isOpen: boolean = $state(false);
 	function changeIsOpen() {
 		isOpen = !isOpen;
@@ -19,7 +19,7 @@
 <div
 	class="sticky top-0 flex w-full items-center justify-between bg-white px-3 py-5 shadow-md md:px-5"
 >
-	<div class="text-2xl font-semibold">My Website</div>
+	<div class="text-2xl font-semibold">{pathName}</div>
 	<button onclick={changeIsOpen} class="cursor-pointer md:hidden"
 		>{#if isOpen}
 			<X />
@@ -33,7 +33,8 @@
 				<a
 					href={link.path}
 					class="cursor-pointer hover:text-teal-500"
-					class:text-teal-500={link.path === pathName}>{link.title}</a
+					class:text-teal-500={link.path === pathName ||
+						pathName === `${link.path}${portofolioId}/`}>{link.title}</a
 				>
 			</li>
 		{/each}
