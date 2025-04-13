@@ -1,15 +1,18 @@
 <script>
 	import { Github } from '@lucide/svelte';
 	import { page } from '$app/state';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import data from '$lib/api/portofolio.json';
 	const portofolios = data;
 	const pathName = $derived(page.url.pathname);
 </script>
 
-<div class="my-5 w-full" in:fade={{ duration: 500 }}>
-	<div class="mt-14 mb-14 text-center text-4xl font-bold">Portofolio</div>
-	<div class="mx-3 grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-3">
+<div class="my-5 w-full">
+	<div class="my-14 text-center text-4xl font-bold">Portofolio</div>
+	<div
+		class="mx-3 grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-3"
+		in:fade={{ duration: 500 }}
+	>
 		{#each portofolios as portofolio}
 			<a href={pathName + portofolio.id}
 				><div
@@ -22,10 +25,7 @@
 						<p
 							class="line-clamp-3 text-sm text-gray-500 group-hover:text-white min-[500px]:line-clamp-4"
 						>
-							Going out tonight changes into the something red her mother doesn't like that kind of
-							dress everything she never had she's showing off. Everything she never had she's
-							showing off driving too fast moon is breaking through her hair she's heading for
-							something that she want't forget
+							{portofolio.description}
 						</p>
 						<div class="h-10 min-[500px]:h-12 sm:h-10"></div>
 						<div class="flex items-center justify-between">

@@ -17,9 +17,9 @@
 </script>
 
 <div
-	class="sticky top-0 flex w-full items-center justify-between bg-white px-3 py-5 shadow-md md:px-5"
+	class="sticky top-0 z-50 flex w-full items-center justify-between bg-white px-3 py-5 shadow-md md:px-5"
 >
-	<div class="text-2xl font-semibold">{pathName}</div>
+	<div class="text-2xl font-semibold">NA</div>
 	<button onclick={changeIsOpen} class="cursor-pointer md:hidden"
 		>{#if isOpen}
 			<X />
