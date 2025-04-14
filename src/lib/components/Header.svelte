@@ -52,7 +52,8 @@
 							onclick={changeIsOpen}
 							href={link.path}
 							class="cursor-pointer transition-colors duration-1000 hover:text-teal-500"
-							class:text-teal-500={link.path === pathName}>{link.title}</a
+							class:text-teal-500={link.path === pathName ||
+								pathName === `${link.path}${portofolioId}/`}>{link.title}</a
 						>
 					</li>
 				{/each}

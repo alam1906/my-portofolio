@@ -14,7 +14,7 @@
 				class="h-80 w-64 rounded-full md:h-[25rem] md:w-[22rem] lg:h-[30rem] lg:w-[25rem]"
 				src="/profile.avif"
 				alt=""
-				loading="lazy"
+				fetchpriority="high"
 			/>
 		</div>
 
@@ -30,8 +30,9 @@
 
 				<Typewriter element={'div'} cursor={false} mode={'loop'} interval={50} unwriteInterval={50}>
 					<div class="py-3 text-4xl font-bold text-teal-500 lg:text-5xl">Mobile Developer</div>
+					<div class="py-3 text-4xl font-bold text-teal-500 lg:text-5xl">Web Developer</div>
 					<div class="py-3 text-4xl font-bold text-teal-500 lg:text-5xl">
-						Web Developer
+						BackEnd Developer
 					</div></Typewriter
 				>
 			</div>
@@ -41,31 +42,41 @@
 				principles and clean architecture.
 			</div>
 			<div class="my-4 ml-1 flex justify-center space-x-5 md:justify-start">
-				<div
-					class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+				<a href="https://github.com/alam1906" target="_blank"
+					><div
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+					>
+						<Github class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
+					</div></a
 				>
-					<Github class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
-				</div>
-				<div
-					class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+				<a href="//" target="_blank"
+					><div
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+					>
+						<Facebook class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
+					</div></a
 				>
-					<Facebook class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
-				</div>
-				<div
-					class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+				<a href="//" target="_blank"
+					><div
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+					>
+						<Linkedin class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
+					</div></a
 				>
-					<Linkedin class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
-				</div>
-				<div
-					class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+				<a href="//" target="_blank"
+					><div
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+					>
+						<Twitter class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
+					</div></a
 				>
-					<Twitter class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
-				</div>
-				<div
-					class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+				<a href="//" target="_blank">
+					<div
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+					>
+						<Instagram class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
+					</div></a
 				>
-					<Instagram class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
-				</div>
 			</div>
 			<div class=" mt-5 flex justify-center space-x-3 md:justify-start lg:space-x-5">
 				<div
