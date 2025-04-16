@@ -9,13 +9,13 @@ export const entries: EntryGenerator = () => {
 
 export const load = async ({ params }) => {
 	const { portofolioId } = params;
-	const portofolios = datas;
 
-	const portofolio = portofolios.find((p) => p.id === portofolioId);
+	const currentIndex = datas.findIndex((p) => p.id === portofolioId);
+	let portofolio = datas[currentIndex] ?? null;
 
 	if (!portofolio) {
 		throw error(404, 'Tidak ada Portofolio');
 	}
 
-	return { portofolio };
+	return { portofolio: portofolio };
 };
