@@ -14,7 +14,7 @@
 		in:fade={{ duration: 500 }}
 	>
 		{#each portofolios as portofolio}
-			<a href={pathName + portofolio.id}
+			<a href={pathName + '/' + portofolio.id}
 				><div
 					class="group cursor-pointer rounded-4xl bg-white px-5 py-3 shadow-md shadow-gray-900 transition duration-500 hover:bg-gray-900 hover:shadow-2xl"
 				>
