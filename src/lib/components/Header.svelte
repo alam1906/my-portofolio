@@ -20,7 +20,7 @@
 	<div
 		class="sticky top-0 z-50 mx-auto flex max-w-6xl items-center justify-between bg-white px-3 py-5 md:px-5"
 	>
-		<div class="text-2xl font-semibold">NA</div>
+		<a href="/" class="cursor-pointer text-2xl font-semibold">NA</a>
 		<button onclick={changeIsOpen} class="cursor-pointer md:hidden"
 			>{#if isOpen}
 				<X />

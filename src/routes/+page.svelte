@@ -37,35 +37,35 @@
 				>
 			</div>
 			<div class="my-2 text-sm text-gray-500 md:pr-10 lg:text-lg">
-				I am a Front End Developer with a good understanding of Flutter and React JS framework, I
-				have experience in UI design, API integration, clean code writing and knowledge of solid
-				principles and clean architecture.
+				I am a Front End Developer with a good understanding of Flutter and FrontEnd JS framework
+				especially React and Svelte, I have experience in UI design, API integration, clean code
+				writing and knowledge of solid principles and clean architecture.
 			</div>
 			<div class="my-4 ml-1 flex justify-center space-x-5 md:justify-start">
 				<a href="https://github.com/alam1906" target="_blank"
 					><div
-						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Github class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
 				<a href="//" target="_blank"
 					><div
-						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Facebook class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
 				<a href="//" target="_blank"
 					><div
-						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Linkedin class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
 				<a href="//" target="_blank"
 					><div
-						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
+						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Twitter class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
@@ -80,12 +80,12 @@
 			</div>
 			<div class=" mt-5 flex justify-center space-x-3 md:justify-start lg:space-x-5">
 				<div
-					class="cursor-pointer rounded-lg bg-gray-900 px-5 py-2 text-sm text-white transition-transform duration-500 hover:-translate-y-2 lg:px-9 lg:py-4"
+					class="cursor-pointer rounded-lg bg-gray-900 px-5 py-2 text-sm text-white transition-transform duration-500 hover:-translate-y-1 lg:px-9 lg:py-4"
 				>
 					Download CV
 				</div>
 				<div
-					class="cursor-pointer rounded-lg border-1 border-gray-900 bg-white px-5 py-2 text-sm transition-transform duration-500 hover:-translate-y-2 lg:px-9 lg:py-4"
+					class="cursor-pointer rounded-lg border-1 border-gray-900 bg-white px-5 py-2 text-sm transition-transform duration-500 hover:-translate-y-1 lg:px-9 lg:py-4"
 				>
 					Contact Me
 				</div>
