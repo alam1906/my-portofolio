@@ -37,6 +37,7 @@
 				}}
 			>
 				<img
+					loading="lazy"
 					src={data.img}
 					alt={data.img}
 					class="cursor-pointer rounded-xl shadow-md shadow-gray-600 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gray-900"
@@ -55,7 +56,7 @@
 		<img
 			src={selectedImage}
 			alt="Zoomed"
-			class="max-h-[90%] max-w-[90%] scale-100 rounded shadow-lg transition-transform duration-300"
+			class="max-h-[95%] max-w-[95%] scale-100 rounded shadow-lg transition-transform duration-300"
 		/>
 	</button>
 {/if}

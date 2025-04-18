@@ -17,7 +17,7 @@
 			<div>
 				<a href={pathName + '/' + portofolio.id}
 					><div
-						class="group cursor-pointer rounded-4xl bg-white px-5 py-3 shadow-md shadow-gray-900 transition duration-500 hover:bg-gray-900 hover:shadow-2xl"
+						class="group cursor-pointer rounded-4xl bg-white px-5 py-3 shadow-md shadow-gray-900 transition-colors duration-500 hover:bg-gray-900 hover:shadow-2xl"
 					>
 						<div class="mb-3 text-center text-2xl font-semibold group-hover:text-white">
 							{portofolio.title}
