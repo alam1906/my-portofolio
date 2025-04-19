@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	const datas = [
-		{ id: 1, img: '/certificate1.avif' },
-		{ id: 2, img: '/certificate2.avif' },
-		{ id: 3, img: '/certificate3.avif' },
-		{ id: 4, img: '/certificate4.avif' },
-		{ id: 5, img: '/certificate5.avif' },
-		{ id: 6, img: '/certificate6.avif' },
-		{ id: 7, img: '/certificate7.avif' },
-		{ id: 8, img: '/certificate8.avif' },
-		{ id: 9, img: '/certificate9.avif' },
-		{ id: 10, img: '/flutter-certification.avif' }
+		{ id: 1, img: '/certificate1.avif', width: '1724', heigth: '1240' },
+		{ id: 2, img: '/certificate2.avif', width: '1724', heigth: '1240' },
+		{ id: 3, img: '/certificate3.avif', width: '1724', heigth: '1240' },
+		{ id: 4, img: '/certificate4.avif', width: '1724', heigth: '1240' },
+		{ id: 5, img: '/certificate5.avif', width: '1724', heigth: '1240' },
+		{ id: 6, img: '/certificate6.avif', width: '1724', heigth: '1240' },
+		{ id: 7, img: '/certificate7.avif', width: '1724', heigth: '1240' },
+		{ id: 8, img: '/certificate8.avif', width: '1724', heigth: '1240' },
+		{ id: 9, img: '/certificate9.avif', width: '1724', heigth: '1240' },
+		{ id: 10, img: '/flutter-certification.avif', width: '1600', height: '1190' }
 	];
 
 	let selectedImage: string | null = null;
@@ -37,7 +37,9 @@
 				}}
 			>
 				<img
-					loading="lazy"
+					width={data.width}
+					height={data.height}
+					fetchpriority={data.id < 9 ? 'high' : 'low'}
 					src={data.img}
 					alt={data.img}
 					class="cursor-pointer rounded-xl shadow-md shadow-gray-600 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gray-900"
@@ -54,6 +56,8 @@
 		onclick={closeImage}
 	>
 		<img
+			width="1724"
+			height="1240"
 			src={selectedImage}
 			alt="Zoomed"
 			class="max-h-[95%] max-w-[95%] scale-100 rounded shadow-lg transition-transform duration-300"
