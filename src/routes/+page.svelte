@@ -6,7 +6,7 @@
 
 <div class="h-[calc(100dvh-5rem)] w-full bg-gray-50">
 	<div
-		class="flex h-full flex-col items-center justify-center space-y-10 sm:pl-10 md:mx-4 md:flex-row-reverse md:items-center md:justify-center md:space-y-0 md:pl-10"
+		class="flex h-full flex-col items-center justify-center space-y-10 sm:px-5 md:mx-4 md:flex-row-reverse md:items-center md:justify-center md:space-y-0 md:px-5"
 	>
 		<!-- profile  -->
 		<div class="flex justify-end md:w-2/3" in:fly={{ x: 200, duration: 500 }}>
