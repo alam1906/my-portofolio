@@ -21,7 +21,11 @@
 		class="sticky top-0 z-50 mx-auto flex max-w-6xl items-center justify-between bg-white px-3 py-5 md:px-5"
 	>
 		<a href="/" class="cursor-pointer text-2xl font-semibold">NA</a>
-		<button onclick={changeIsOpen} class="cursor-pointer md:hidden"
+		<button
+			onclick={changeIsOpen}
+			class="cursor-pointer md:hidden"
+			aria-label="Navigation"
+			title="Navigation"
 			>{#if isOpen}
 				<X />
 			{:else}
@@ -33,8 +37,8 @@
 				<li>
 					<a
 						href={link.path}
-						class="cursor-pointer hover:text-teal-500"
-						class:text-teal-500={link.path === pathName ||
+						class="cursor-pointer hover:text-teal-700"
+						class:text-teal-700={link.path === pathName ||
 							pathName === `${link.path}/${portofolioId}`}>{link.title}</a
 					>
 				</li>
@@ -52,8 +56,8 @@
 							<a
 								onclick={changeIsOpen}
 								href={link.path}
-								class="cursor-pointer transition-colors duration-1000 hover:text-teal-500"
-								class:text-teal-500={link.path === pathName ||
+								class="cursor-pointer transition-colors duration-1000 hover:text-teal-700"
+								class:text-teal-700={link.path === pathName ||
 									pathName === `${link.path}/${portofolioId}`}>{link.title}</a
 							>
 						</li>

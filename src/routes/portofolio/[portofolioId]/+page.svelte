@@ -6,6 +6,9 @@
 	let portofolio = $derived(data.portofolio);
 </script>
 
+<svelte:head>
+	<title>{portofolio.title}</title>
+</svelte:head>
 <div in:fade={{ duration: 500 }}>
 	{#key portofolio.id}
 		<div class="mx-auto w-full px-10 md:w-5/6" in:fade={{ duration: 500 }}>
@@ -20,7 +23,7 @@
 					<div></div>
 				{:else}
 					<a href={`/portofolio/${parseInt(portofolio.id) - 1}`}
-						><div class="flex cursor-pointer items-center justify-start space-x-2 text-teal-500">
+						><div class="flex cursor-pointer items-center justify-start space-x-2 text-teal-700">
 							<div class="mt-1"><MoveLeft /></div>
 							<div>Previous</div>
 						</div></a
@@ -30,7 +33,7 @@
 				{#if parseInt(portofolio.id) >= portofolios.length}{:else}
 					<a
 						href={`/portofolio/${parseInt(portofolio.id) + 1}`}
-						class="flex cursor-pointer items-center justify-start space-x-2 text-teal-500"
+						class="flex cursor-pointer items-center justify-start space-x-2 text-teal-700"
 					>
 						<div>Next</div>
 						<div class="mt-1"><MoveRight /></div>

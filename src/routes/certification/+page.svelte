@@ -24,6 +24,9 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Certification</title>
+</svelte:head>
 <div class="my-5 w-full">
 	<div class="my-14 text-center text-4xl font-bold">Certification</div>
 	<div
@@ -32,6 +35,8 @@
 	>
 		{#each datas as data}
 			<button
+				aria-label="scale"
+				title="scale"
 				onclick={() => {
 					openImage(data.img);
 				}}
@@ -52,6 +57,8 @@
 <!-- Overlay Zoom -->
 {#if selectedImage}
 	<button
+		aria-label="unscale"
+		title="unscale"
 		class="fixed inset-0 z-50 flex cursor-zoom-out items-center justify-center bg-black/80"
 		onclick={closeImage}
 	>

@@ -7,6 +7,9 @@
 	const pathName = $derived(page.url.pathname);
 </script>
 
+<svelte:head>
+	<title>Portofolio</title>
+</svelte:head>
 <div class="my-5 w-full">
 	<div class="my-14 text-center text-4xl font-bold">Portofolio</div>
 	<div
@@ -31,7 +34,7 @@
 							<div class="h-10 min-[500px]:h-12 sm:h-10"></div>
 							<div class="flex items-center justify-between">
 								<div
-									class="flex items-start justify-start space-x-2 font-semibold text-teal-500 group-hover:text-teal-500"
+									class="flex items-start justify-start space-x-2 font-semibold text-teal-700 group-hover:text-teal-700"
 								>
 									<div>Check on Github</div>
 									<div
@@ -40,7 +43,7 @@
 										<Github class="h-4 w-4 group-hover:text-teal-700" />
 									</div>
 								</div>
-								<div class="font-semibold text-teal-500 group-hover:text-teal-500">Read More</div>
+								<div class="font-semibold text-teal-700 group-hover:text-teal-700">Read More</div>
 							</div>
 						</div>
 					</div></a

@@ -4,7 +4,10 @@
 	import { Github, Instagram, Twitter, Linkedin, Facebook } from '@lucide/svelte';
 </script>
 
-<div class="h-[calc(100dvh-5rem)] w-full bg-gray-50">
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+<div class="h-[calc(100dvh-5rem)] w-full">
 	<div
 		class="flex h-full flex-col items-center justify-center space-y-10 sm:px-5 md:mx-4 md:flex-row-reverse md:items-center md:justify-center md:space-y-0 md:px-5"
 	>
@@ -38,9 +41,9 @@
 						unwriteInterval={50}
 					>
 						<div class="transition-[font-size] duration-200">
-							<div class="py-3 text-4xl font-bold text-teal-500 lg:text-5xl">Mobile Developer</div>
-							<div class="py-3 text-4xl font-bold text-teal-500 lg:text-5xl">Web Developer</div>
-							<div class="py-3 text-4xl font-bold text-teal-500 lg:text-5xl">BackEnd Developer</div>
+							<div class="py-3 text-4xl font-bold text-teal-700 lg:text-5xl">Mobile Developer</div>
+							<div class="py-3 text-4xl font-bold text-teal-700 lg:text-5xl">Web Developer</div>
+							<div class="py-3 text-4xl font-bold text-teal-700 lg:text-5xl">BackEnd Developer</div>
 						</div></Typewriter
 					>
 					<div class="invisible py-3 text-4xl font-bold md:hidden">3</div>
@@ -63,28 +66,28 @@
 						<Github class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="//" target="_blank"
+				<a href="https://github.com/alam1906" target="_blank"
 					><div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Facebook class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="//" target="_blank"
+				<a href="https://www.linkedin.com/in/nur-alam-26460a240/" target="_blank"
 					><div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Linkedin class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="//" target="_blank"
+				<a href="https://github.com/alam1906" target="_blank"
 					><div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Twitter class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="//" target="_blank">
+				<a href="https://github.com/alam1906" target="_blank">
 					<div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
 					>
