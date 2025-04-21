@@ -25,6 +25,11 @@
 </script>
 
 <svelte:head>
+	<meta name="title" content="my certification" />
+	<meta
+		name="description"
+		content="Ini adalah sertifikat yang saya dapatkan dari berbagai course"
+	/>
 	<title>Certification</title>
 </svelte:head>
 <div class="my-5 w-full">

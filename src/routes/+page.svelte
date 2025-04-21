@@ -5,6 +5,11 @@
 </script>
 
 <svelte:head>
+	<meta name="title" content="Tentang saya - Nur Alam" />
+	<meta
+		name="description"
+		content="I am a Front End Developer with a good understanding of Flutter and FrontEnd JS framework especially React and Svelte, I have experience in UI design, API integration, clean code writing and knowledge of solid principles and clean architecture"
+	/>
 	<title>Home</title>
 </svelte:head>
 <div class="h-[calc(100dvh-5rem)] w-full">

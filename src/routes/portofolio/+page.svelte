@@ -8,6 +8,8 @@
 </script>
 
 <svelte:head>
+	<meta name="portofolio" content="portofolio" />
+	<meta name="description" content="This is my portofolio and project" />
 	<title>Portofolio</title>
 </svelte:head>
 <div class="my-5 w-full">

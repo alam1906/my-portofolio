@@ -7,6 +7,8 @@
 </script>
 
 <svelte:head>
+	<meta name="title" content="Detail portofolio atau project" />
+	<meta name="description" content="Ini adalah detail dari portofolio atau project" />
 	<title>{portofolio.title}</title>
 </svelte:head>
 <div in:fade={{ duration: 500 }}>
