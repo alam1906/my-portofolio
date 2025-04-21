@@ -59,35 +59,38 @@
 			<div
 				class="my-4 ml-1 flex justify-center space-x-5 transition-[width,height] duration-200 md:justify-start"
 			>
-				<a href="https://github.com/alam1906" target="_blank"
+				<a href="https://github.com/alam1906" target="_blank" aria-label="github"
 					><div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Github class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="https://github.com/alam1906" target="_blank"
+				<a href="https://github.com/alam1906" target="_blank" aria-label="facebook"
 					><div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Facebook class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="https://www.linkedin.com/in/nur-alam-26460a240/" target="_blank"
+				<a
+					href="https://www.linkedin.com/in/nur-alam-26460a240/"
+					target="_blank"
+					aria-label="linkedin"
 					><div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Linkedin class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="https://github.com/alam1906" target="_blank"
+				<a href="https://github.com/alam1906" target="_blank" aria-label="twitter"
 					><div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1 lg:h-8 lg:w-8"
 					>
 						<Twitter class=" h-4 w-4 cursor-pointer text-white  lg:h-5 lg:w-5" />
 					</div></a
 				>
-				<a href="https://github.com/alam1906" target="_blank">
+				<a href="https://github.com/alam1906" target="_blank" aria-label="instagram">
 					<div
 						class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 transition-transform duration-300 hover:-translate-y-1.5 lg:h-8 lg:w-8"
 					>
